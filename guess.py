@@ -1,9 +1,16 @@
 
-import random, math, os
-os.system('cls')
+import random, math
 
 total = 0
 sug = []
+
+who_play = int(input('\nWho will play ? (Computer - 1, Human - 0) : '))
+if not who_play:
+  if_sug = int(input('Do you need suggestion ? (Yes - 1, No - 0) : '))
+else:
+  if_sug = 0
+limit = int(input('Need limit ? (Yes - 1, No - 0) : '))
+
 def binary_search(arr, x):
   low = 0
   high = len(arr) - 1
@@ -24,10 +31,12 @@ def binary_search(arr, x):
       
   return -1
 
-# a = int(input('Enter lower limit : '))
-# b = int(input('Enter upper limit : '))
+if limit:
+  a = int(input('\nEnter lower limit (e.g., 1) : '))
+  b = int(input('Enter upper limit : (e.g., 100) '))
+else:
+  a,b=1,100
 
-a,b=1,100
 choice = random.randint(a,b)
 
 c = math.ceil(math.log(b-a+1))
@@ -36,10 +45,14 @@ binary_search(range(a,b+1), choice)
 
 for i in range(c):
   print()
-#   print('Suggestion (beta) : ', sug[i])
 
-#   ask = sug[i]
-  ask = int(input(f'{i+1}). Enter a number : '))
+  if if_sug:
+    print('Suggestion (beta) : ', sug[i])
+
+  if who_play:
+    ask = sug[i]
+  else:
+    ask = int(input(f'{i+1}). Enter a number : '))
 
   if ask > choice:
     print('too high')
@@ -57,35 +70,13 @@ print('Correct Answer : ', choice)
 
 print('\nLast guess : ', ask)
 total += abs(ask-choice)
-print(f'Missed by difference of {total} numbers.')
 
-# =====================================================
+if total:
+  print(f'Missed by difference of {total} numbers.')
+else:
+  if not who_play:
+    print('Congratulations Human ...')
+  else:
+    print('Congratulations Computer ...')
 
-'''
-C:\\Users\\Vicky\\Desktop\\Repository\\Guess-a-Number-Game.exe>python guess.py
-
-Chance given :  5
-
-Suggestion (beta) :  50
-too high
-
-Suggestion (beta) :  25
-too high
-
-Suggestion (beta) :  12
-too high
-
-Suggestion (beta) :  6
-too high
-
-Suggestion (beta) :  3
-too low
-------------------------- Summary
-
-Taken chances :  5
-Correct Answer :  4
-
-Last guess :  3
-Missed by difference of 1 numbers.
-
-'''
+input('\n\t ... Press `Enter` to Exit.')

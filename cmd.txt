@@ -1,0 +1,85 @@
+C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe>python guess.py
+
+Who will play ? (Computer - 1, Human - 0) : 0
+Do you need suggestion ? (Yes - 1, No - 0) : 1
+Need limit ? (Yes - 1, No - 0) : 1
+
+Enter lower limit (e.g., 1) : 1
+Enter upper limit : (e.g., 100) 2
+
+Chance given :  1
+
+Suggestion (beta) :  1
+1). Enter a number : 1
+... correct ...
+------------------------- Summary
+
+Taken chances :  1
+Correct Answer :  1
+
+Last guess :  1
+Congratulations Human ...
+
+C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe>pyinstaller --onefile guess.py
+11101 INFO: PyInstaller: 5.7.0
+11102 INFO: Python: 3.9.13 (conda)
+11140 INFO: Platform: Windows-10-10.0.22623-SP0
+11144 INFO: wrote C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\guess.spec
+11155 INFO: UPX is not available.
+11173 INFO: Extending PYTHONPATH with paths
+['C:\\Users\\Vicky\\Desktop\\Repository\\Guess-a-Number-Game.exe']
+18812 INFO: checking Analysis
+18812 INFO: Building Analysis because Analysis-00.toc is non existent
+18813 INFO: Initializing module dependency graph...
+18854 INFO: Caching module graph hooks...
+19006 INFO: Analyzing base_library.zip ...
+58304 INFO: Loading module hook 'hook-encodings.py' from 'C:\\Users\\Vicky\\anaconda3\\lib\\site-packages\\PyInstaller\\hooks'...
+76181 INFO: Loading module hook 'hook-pickle.py' from 'C:\\Users\\Vicky\\anaconda3\\lib\\site-packages\\PyInstaller\\hooks'...
+80413 INFO: Loading module hook 'hook-heapq.py' from 'C:\\Users\\Vicky\\anaconda3\\lib\\site-packages\\PyInstaller\\hooks'...
+84779 INFO: Caching module dependency graph...
+85354 INFO: running Analysis Analysis-00.toc
+85392 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by C:\Users\Vicky\anaconda3\python.exe
+86125 INFO: Analyzing C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\guess.py
+86136 INFO: Processing module hooks...
+86184 INFO: Looking for ctypes DLLs
+86192 INFO: Analyzing run-time hooks ...
+86214 INFO: Looking for dynamic libraries
+11111 INFO: Extra DLL search directories (AddDllDirectory): []
+11112 INFO: Extra DLL search directories (PATH): ['C:\\Program Files\\Common Files\\Oracle\\Java\\javapath', 'C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR', 'C:\\Program Files\\Git\\cmd', 'C:\\Users\\Vicky\\Downloads\\win_flex_bison-latest', 'C:\\Users\\Vicky\\Desktop\\Arduino\\CLI', 'C:\\Program Files\\PuTTY\\', 'C:\\Program Files\\Polyspace\\R2021a\\runtime\\win64', 'C:\\Program Files\\Polyspace\\R2021a\\bin', 'C:\\WINDOWS\\system32', 'C:\\WINDOWS', 'C:\\WINDOWS\\System32\\Wbem', 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\WINDOWS\\System32\\OpenSSH\\', 'C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common', 'C:\\WINDOWS\\system32', 'C:\\WINDOWS', 'C:\\WINDOWS\\System32\\Wbem', 'C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\WINDOWS\\System32\\OpenSSH\\', 'C:\\Program Files\\Java\\jdk-15.0.1\\bin', 'C:\\Program Files\\MongoDB\\Server\\6.0\\bin\\', 'C:\\Users\\Vicky\\anaconda3', 'C:\\Users\\Vicky\\anaconda3\\Library\\mingw-w64\\bin', 'C:\\Users\\Vicky\\anaconda3\\Library\\usr\\bin', 'C:\\Users\\Vicky\\anaconda3\\Library\\bin', 'C:\\Users\\Vicky\\anaconda3\\Scripts', 'C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\', 'C:\\Users\\Vicky\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\', 'C:\\Users\\Vicky\\AppData\\Local\\Programs\\Python\\Python39\\', 'C:\\Users\\Vicky\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\Vicky\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.7_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python37\\Scripts', 'C:\\Program Files\\heroku\\bin', 'C:\\Users\\Vicky\\AppData\\Local\\atom\\bin', 'C:\\Users\\Vicky\\Desktop\\Flutter\\flutter_windows_1.17.5-stable\\flutter\\bin', 'C:\\Users\\Vicky\\Desktop\\Arduino\\CLI', 'C:\\Users\\Vicky\\AppData\\Local\\Android\\Sdk', 'C:\\Users\\Vicky\\AppData\\Local\\GitHubDesktop\\bin', 'C:\\Users\\Vicky\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Program Files\\TestProject Agent', 'C:\\Program Files\\nodejs', 'C:\\Users\\Vicky\\AppData\\Local\\Programs\\Microsoft VS Code\\bin']
+100131 INFO: Looking for eggs
+100131 INFO: Using Python library C:\Users\Vicky\anaconda3\python39.dll
+100131 INFO: Found binding redirects:
+[]
+100139 INFO: Warnings written to C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\build\guess\warn-guess.txt
+100323 INFO: Graph cross-reference written to C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\build\guess\xref-guess.html
+100414 INFO: checking PYZ
+100414 INFO: Building PYZ because PYZ-00.toc is non existent
+100415 INFO: Building PYZ (ZlibArchive) C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\build\guess\PYZ-00.pyz
+101430 INFO: Building PYZ (ZlibArchive) C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\build\guess\PYZ-00.pyz completed successfully.
+101463 INFO: checking PKG
+101464 INFO: Building PKG because PKG-00.toc is non existent
+101464 INFO: Building PKG (CArchive) guess.pkg
+107832 INFO: Building PKG (CArchive) guess.pkg completed successfully.
+107844 INFO: Bootloader C:\Users\Vicky\anaconda3\lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\run.exe
+107844 INFO: checking EXE
+107845 INFO: Building EXE because EXE-00.toc is non existent
+107846 INFO: Building EXE from EXE-00.toc
+107850 INFO: Copying bootloader EXE to C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\dist\guess.exe.notanexecutable
+108214 INFO: Copying icon to EXE
+108222 INFO: Copying icons from ['C:\\Users\\Vicky\\anaconda3\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-console.ico']
+108584 INFO: Writing RT_GROUP_ICON 0 resource with 104 bytes
+108584 INFO: Writing RT_ICON 1 resource with 3752 bytes
+108585 INFO: Writing RT_ICON 2 resource with 2216 bytes
+108585 INFO: Writing RT_ICON 3 resource with 1384 bytes
+108585 INFO: Writing RT_ICON 4 resource with 37019 bytes
+108586 INFO: Writing RT_ICON 5 resource with 9640 bytes
+108586 INFO: Writing RT_ICON 6 resource with 4264 bytes
+108586 INFO: Writing RT_ICON 7 resource with 1128 bytes
+108598 INFO: Copying 0 resources to EXE
+108598 INFO: Embedding manifest in EXE
+108603 INFO: Updating manifest in C:\Users\Vicky\Desktop\Repository\Guess-a-Number-Game.exe\dist\guess.exe.notanexecutable
+108868 INFO: Updating resource type 24 name 1 language 0
+108882 INFO: Appending PKG archive to EXE
+108929 INFO: Fixing EXE headers
+113988 INFO: Building EXE from EXE-00.toc completed successfully.
